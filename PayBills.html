@@ -47,12 +47,22 @@
 <form>
   <label>Bill ID</label>
   <input type="text" required>
-   <button>
-      Pay with credit card
+   <button onclick="redirectToPage()">Pay with credit card
   </button>
-  <button>
+  <script>
+    function redirectToPage() {
+      window.location.href = "C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithCreditCard.html"; // Replace with your desired URL
+    }
+  </script>
+  <!-- <a href="C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"></a> -->
+  <button onclick="redirectToPage2()">
     Pay with bank account
 </button> 
+<script>
+  function redirectToPage2() {
+    window.location.href = "C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"; // Replace with your desired URL
+  }
+</script>
  <!-- <select class="form-select" aria-label="Default select example">
   <option selected>Pay with</option>
   <option value="1">Credit Card</option>
