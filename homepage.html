@@ -40,6 +40,7 @@
             background-color: #858080;
         }
     </style>
+    
   </head>
   <body>
    
@@ -48,19 +49,10 @@
         <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
           <span class="navbar-toggler-icon"></span>
         </button>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Logout</a></li>
-          <li><a href="#"><button onclick="redirectToPage2()" class="btn bg-transparent" >
-            Notifications 
-        </button> 
-        <span class="badge text-bg-secondary">4</span> 
-        <onclick="redirectToPage2()"> 
-        <script>
-          function redirectToPage2() {
-            window.location.href = "Notifications.html";
-          }
-        </script>
-        </a></li>
+      
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="#">Logout</a></li> <!-- login pageee -->
+          <li><a href="Notifications.html"> Notifications <span class="badge text-bg-secondary">4</span></a></li>
 
           <img src="Logo2.png" alt="Bootstrap" width="180" height="80"  style="background-color: #912626;">
 
@@ -77,23 +69,31 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <!-- <div class="dropdown mt-3"> -->
-            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button> -->
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul> -->
+          <!-- <style>
+          .offcanvas a {
+            display: block;
+            color: #000; /* Change the color to black */
+            text-decoration: none;
+        }
+    </style> -->
+      <!-- <style>
+        ul {
+            list-style: none; /* Remove the bullets */
+            padding: 0;
+        }
+    </style> -->
+          
           <ul>
+            
             <li><div type="button" class=" btn bg-transparent">Contact us</div></li>
 
             <li><div type="button" class=" btn bg-transparent">About us</div></li>
 
             <li><div type="button" class=" btn bg-transparent">Branches</div></li>
 
-            <li><div type="button" class=" btn bg-transparent">Terms and conditions</div></li>
+            <li><div type="button" class=" btn bg-transparent"></div><a href="Terms.html" >Terms and conditions</a></li>
+
+            <!-- <li>   <a href="Terms.html">Page 2</a> </li> -->
             
             </ul>
 
@@ -159,13 +159,6 @@
         </style>
           <img src="Help.png" width="250" height="250" class=image >
         </div>
-
-        <!-- <div class="grid gap-3">
-          <div class="p-2 g-col-4">Grid item 1</div>
-          <div class="p-10 g-col-40">Grid item 2</div>
-          <div class="p-4 g-col-4">Grid item 3</div>
-          <div class="p-4 g-col-6">Grid item 4</div>
-        </div> -->
 
         <div class="text2">
           <style>
