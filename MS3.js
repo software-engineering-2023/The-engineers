@@ -22,6 +22,9 @@ function handle(){
    else
    if(s==='My card was damaged')
    table.rows[3].cells[4].innerHTML =a;
+   if(s === "")
+   alert(" You did not choose a problem to handle");
+   else
    alert("Report Handeled");
    
 }
@@ -43,7 +46,24 @@ function handle2(){
    else
    if(s==='I can not submit requests')
    table.rows[2].cells[1].innerHTML =a;
-
+   if(s === "")
+   alert(" You did not choose a problem to handle");
+   else
    alert("Report Handeled");
    
+}
+function submitpopCR(){
+    if(document.getElementById("exampleFormControlTextarea1").value==="")
+    alert("Please write a problem");
+    else
+    if(document.getElementById("exampleFormControlInput1").value==="")
+    alert("Please write a valid credit card number");
+    else
+    alert("Submitted");
+}
+function submitpop(){
+    if(document.getElementById("exampleFormControlTextarea1").value==="")
+    alert("Please write a problem");
+    else 
+    alert("Submitted");
 }
