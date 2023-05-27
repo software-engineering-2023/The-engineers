@@ -36,13 +36,19 @@ function checkLogin() {
     var password = document.getElementById("password").value;
     
     if (username === "client" && password === "client") {
+		window.close("login.html");
 		window.open("homepage.html");
+		
+		
+		// window.href="homepage.html";
     } 
 	else if ((username === "admin" && password === "admin")){
-	window.open("AdminHomePage.html");
+		window.close("login.html");
+		window.open("AdminHomePage.html");
 	}
 	else if ((username === "banker" && password === "banker")){
-	window.open("BankerHomePage.html");
+		window.close("login.html");
+		window.open("BankerHomePage.html");
 	}
 	else if ((username === "newclient" && password === "newclient")){
 	window.open("homepage.html");
