@@ -19,9 +19,9 @@
 
         <a href="frgtpass.html" style="margin-top:3px; margin-bottom: 15px; font-size: smaller; color:#074450;">Forgot Password</a>
 		
-        <button class="btn" style="margin-top:10px;" onclick="window.location.href = 'homepage.html';">Login</button>
+        <button class="btn" style="margin-top:10px;" onclick="checkLogin()">Login</button>
         <hr style="margin-top: 15px; margin-bottom: 15px;">
-        <button class="btn" style="background-color: rgb(17, 17, 155);" onclick="window.location.href = 'register.html'">Register</button>
+        <button class="btn" style="background-color: rgb(2, 39, 98);" onclick="window.location.href='register.html'">Register</button>
         
 	</form>
 
@@ -29,3 +29,23 @@
     </div>
 </body>
 </html>
+<script>
+
+function checkLogin() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    if (username === "client" && password === "client") {
+		window.open("homepage.html");
+    } 
+	else if ((username === "admin" && password === "admin")){
+	window.open("AdminHomePage.html");
+	}
+	else if ((username === "banker" && password === "banker")){
+	window.open("BankerHomePage.html");
+	}
+	else {
+        alert("Invalid username or password");
+    }
+}
+</script>
