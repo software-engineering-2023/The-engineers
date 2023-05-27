@@ -76,27 +76,43 @@
   </head>
   <body>
     <nav>
-        <ul class="navbar ">
-         
-          <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                    <li><a href="BankerHomePage.html" class="t1" style="color: white;">Home</a></li>
-            <li><a href="#"style="color: white;">Logout</a></li> <!-- login pageee -->
-            <li><a href="NotificationsBanker.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">3</span></a></li>
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color:white;" >Help</a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item " href="reportTechnical.html" >Report Technical Issue</a></li>
-                </ul>
-              </li>
-            <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
-            <!-- #912626 -->
-        </ul>
-        
-    </nav>
-    <h1 for="javascript"><FONT COLOR="#267326">Loan Requests</FONT></h1><br>
-    <table class ="table table-striped" id="REQ">
+      <ul class="navbar ">
+       
+        <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                  <li><a href="BankerHomePage.html" class="t1" style="color: white;">Home</a></li>
+          <li><a href="login.html"style="color: white;">Logout</a></li> <!-- login pageee -->
+          <li><a href="NotificationsBanker.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">3</span></a></li>
+          
+          <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
+          <!-- #912626 -->
+      </ul>
+      <div> 
+      
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 17rem;">
+          <div class="offcanvas-header" style = "background-color: white">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style = "background-color: #b0d1b0;">
+            
+            <ul>
+              <li><div type="button" class=" btn bg-transparent"><a href ="ContactUs.html" >Contact us </a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent"><a href ="AboutUs.html" >About us</a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent"><a href ="Branches.html"> Branches</a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent "><a href ="Terms.html" >Terms and conditions</a></div></li>
+              
+              </ul>
+
+            </div>
+          </div>
+  </nav>
+  <h1 style="margin-left: 5%;" >Loan Requests</h1>
+    <table class ="table table-striped" id="REQ" style="width: 80rem; margin-left: 5%;">
   <thead>
     <tr>
       <th scope="col">Request Id</th>
