@@ -44,6 +44,16 @@ function checkLogin() {
 	else if ((username === "banker" && password === "banker")){
 	window.open("BankerHomePage.html");
 	}
+	else if ((username === "newclient" && password === "newclient")){
+	window.open("homepage.html");
+	}
+	else if ((username === "newbanker" && password === "newbanker")){
+	window.open("BankerHomePage.html");
+	}
+	else if ((username === "newadmin" && password === "newadmin")){
+	window.open("AdminHomePage.html");
+	}
+	
 	else {
         alert("Invalid username or password");
     }
