@@ -15,7 +15,30 @@
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 		
-		<button class="btn" style="background-color: rgb(18, 106, 18);" onclick="window.location.href = 'login.html'">Reset Password</button>
+		<button class="btn" style="background-color: rgb(18, 106, 18);" onclick="checkINFO()">Reset Password</button>
 	</form>
 </body>
 </html>
+<script>
+
+function checkINFO() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    
+    if (username === "client" && email === "client@gmail.com") {
+		window.open("login.html");
+    } 
+	else if ((username === "admin" && email === "admin@gmail.com")){
+	window.open("login.html");
+	}
+	else if ((username === "banker" && email === "banker@gmail.com")){
+	window.open("login.html");
+	}
+	else {
+        alert("Invalid username or email");
+    }
+}
+
+
+
+</script>
