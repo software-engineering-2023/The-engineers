@@ -96,8 +96,12 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          
-          
+        
+           <style>
+            .test{border: none;
+              
+            }
+          </style> 
           <ul>
             
             <li><div type="button" class=" btn bg-transparent">Contact us</div></li>
@@ -106,12 +110,16 @@
 
             <li><div type="button" class=" btn bg-transparent">Branches</div></li>
 
-            <li><div type="button" class=" btn bg-transparent"></div><a href="Terms.html" >Terms and conditions</a></li>
+            <li><div> <button class="test" onclick="redirectToPage5()" style="background-color: white;" >Terms and conditions</button></div></li>
 
             <!-- <li>   <a href="Terms.html">Page 2</a> </li> -->
             
             </ul>
-
+            <script>
+              function redirectToPage5() {
+                window.location.href = "Terms.html"; // Replace with your desired URL
+              }
+            </script>
           
             
           </div>
