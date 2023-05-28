@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Credit Card Requests</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="LREQ.js" ></script>
     <title>Scrolling Page</title>
     <style>
         body {
@@ -74,29 +75,45 @@
   </head>
   <body>
     <nav>
-        <ul class="navbar ">
-         
-          <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-                    <li><a href="BankerHomePage.html" class="t1" style="color: white;">Home</a></li>
-            <li><a href="#"style="color: white;">Logout</a></li> <!-- login pageee -->
-            <li><a href="NotificationsBanker.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">3</span></a></li>
-            <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color:white;" >Help</a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item select" href="reportTechnical.html" >Report Technical Issue</a></li>
-                </ul>
-              </li>
-            <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
-            <!-- #912626 -->
-        </ul>
-        
-    </nav>
+      <ul class="navbar ">
+       
+        <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                  <li><a href="BankerHomePage.html" class="t1" style="color: white;">Home</a></li>
+          <li><a href="login.html"style="color: white;">Logout</a></li> <!-- login pageee -->
+          <li><a href="NotificationsBanker.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">3</span></a></li>
+          
+          <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
+          <!-- #912626 -->
+      </ul>
+      <div> 
+      
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 17rem;">
+          <div class="offcanvas-header" style = "background-color: white">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style = "background-color: #b0d1b0;">
+            
+            <ul>
+              <li><div type="button" class=" btn bg-transparent"><a href ="ContactUs.html" >Contact us </a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent"><a href ="AboutUs.html" >About us</a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent"><a href ="Branches.html"> Branches</a></div></li>
+  
+              <li><div type="button" class=" btn bg-transparent "><a href ="Terms.html" >Terms and conditions</a></div></li>
+              
+              </ul>
+
+            </div>
+          </div>
+  </nav>
     <body>
         
-        <h1 for="javascript"><FONT COLOR="#267326">Credit Card Requests</FONT></h1><br>
-        <table class="table table-striped">
+      <h1 style="margin-left: 5%;" >Card Requests</h1>
+      <table class ="table table-striped" id="REQ" style="width: 80rem; margin-left: 5%;">
       <thead>
         <tr>
           <th scope="col">Request Id</th>
@@ -110,22 +127,28 @@
           <th scope="row">1</th>
           <td>Mostafa</td>
           <td>12349999</td>
-          <td>Rejected</td>
-          <td><button type="button" class="btn btn-success">View</button></td>
+          <td>Pending</td>
+          <td> <a href="First Card Request.html"><button type="button" class="btn btn-success">View</button> </a></td>
+          <td> <button type="button" class="btn btn-success"  onclick="Approve1()">Accept</button> <button type="button" class="btn btn-success" onclick="Reject1()">Reject</button></td>
+
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Rahaf</td>
           <td>76548888</td>
-          <td>Approved</td>
-          <td><button type="button" class="btn btn-success">View</button></td>
+          <td>Pending</td>
+          <td> <a href="Second Card Request.html"><button type="button" class="btn btn-success">View</button></a></td>
+          <td> <button type="button" class="btn btn-success"  onclick="Approve2()">Accept</button> <button type="button" class="btn btn-success" onclick="Reject2()">Reject</button></td>
+
         </tr>
         <tr>
           <th scope="row">3</th>
-          <td>Carla</td>
+          <td>Mariam</td>
           <td>98761137</td>
           <td>Pending</td>
-          <td><button type="button" class="btn btn-success">View</button></td>
+          <td> <a href="Third Card Request.html"><button type="button" class="btn btn-success">View</button> </a></td>
+          <td> <button type="button" class="btn btn-success"  onclick="Approve3()">Accept</button> <button type="button" class="btn btn-success" onclick="Reject3()">Reject</button></td>
+
         </tr>
       </tbody>
     </table>
