@@ -26,13 +26,17 @@ function checkINFO() {
     var email = document.getElementById("email").value;
     
     if (username === "client" && email === "client@gmail.com") {
+		window.close("frgtpass.html");
 		window.open("login.html");
     } 
 	else if ((username === "admin" && email === "admin@gmail.com")){
-	window.open("login.html");
+		window.close("frgtpass.html");
+		window.open("login.html");
 	}
 	else if ((username === "banker" && email === "banker@gmail.com")){
-	window.open("login.html");
+		window.close("frgtpass.html");
+		window.open("login.html");
+
 	}
 	else {
         alert("Invalid username or email");

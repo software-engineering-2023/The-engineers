@@ -44,16 +44,19 @@ var username = document.getElementById("username").value;
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
 	if ((username === "newclient" && password === "newclient")){
-	window.open("login.html");
+		window.close("register.html");
+		window.open("login.html");
 	// window.location.href = "login.html";
 	}
 	else if ((username === "newbanker" && password === "newbanker")){
-	window.open("login.html");
+		window.close("register.html");
+		window.open("login.html");
 	// window.location.href = "login.html";
 	}
 	else if ((username === "newadmin" && password === "newadmin")){
-	// window.open("login.html");
-	window.location.href = "login.html";
+		window.close("register.html");
+		window.open("login.html");
+	// window.location.href = "login.html";
 	}
 
 
