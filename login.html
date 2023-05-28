@@ -19,7 +19,7 @@
 
         <a href="frgtpass.html" style="margin-top:3px; margin-bottom: 15px; font-size: smaller; color:#074450;">Forgot Password</a>
 		
-        <button class="btn" style="margin-top:10px;" onclick="checkLogin()">Login</button>
+        <button class="btn" style="margin-top:10px;" onclick="checkLogin(); ">Login</button>
         <hr style="margin-top: 15px; margin-bottom: 15px;">
         <button class="btn" style="background-color: rgb(2, 39, 98);" onclick="window.location.href='register.html'">Register</button>
         
@@ -38,6 +38,7 @@ function checkLogin() {
     if (username === "client" && password === "client") {
 		window.close("login.html");
 		window.open("homepage.html");
+		// window.location.href = "homepage.html";
 		
 		
 		// window.href="homepage.html";
@@ -45,22 +46,27 @@ function checkLogin() {
 	else if ((username === "admin" && password === "admin")){
 		window.close("login.html");
 		window.open("AdminHomePage.html");
+		
 	}
 	else if ((username === "banker" && password === "banker")){
 		window.close("login.html");
 		window.open("BankerHomePage.html");
 	}
 	else if ((username === "newclient" && password === "newclient")){
-	window.open("homepage.html");
+		window.close("login.html");
+		window.open("homepage.html");
 	}
 	else if ((username === "nada" && password === "nada")){
-	window.open("homepage.html");
+		window.close("login.html");
+		window.open("homepage.html");
 	}
 	else if ((username === "newbanker" && password === "newbanker")){
-	window.open("BankerHomePage.html");
+		window.close("login.html");
+		window.open("BankerHomePage.html");
 	}
 	else if ((username === "newadmin" && password === "newadmin")){
-	window.open("AdminHomePage.html");
+		window.close("login.html");
+		window.open("AdminHomePage.html");
 	}
 	
 	else {

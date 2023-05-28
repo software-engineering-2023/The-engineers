@@ -286,7 +286,7 @@ text-decoration: underline;
         </head>
         <body>
             <label for="account-number">Reason</label>
-            <input type="text" id="account-number" name="account-number" placeholder="I need the loan to pay for a car installment">
+            <input type="text" id="reason" name="account-number" placeholder="I need the loan to pay for a car installment" >
         </body>
           </div>
           <div>
@@ -300,7 +300,7 @@ text-decoration: underline;
         </head>
         <body>
             <label for="account-number">Ammount</label>
-            <input type="text" id="account-number" name="account-number" placeholder="$15000">           
+            <input type="text" id="amount" name="account-number" placeholder="$15000" >           
           <div>
             <button type="button" class="btn btn-primary" style="margin-top: 10px;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
           </div>
@@ -319,9 +319,15 @@ text-decoration: underline;
           window.location.href = "homepage.html";
         }
         function submitForm(){
+          var reason = document.getElementById("reason").value;
+          var amount = document.getElementById("amount").value;
+          if (reason == "" && amount == ""){
+            alert("Please state your reason and the amount you want");
+          }
+          else{
           alert("Loan application was successful we will notify you when the banker reviwes it.");
           window.location.href = "homepage.html";
-
+          }
         }
         </script>
 
