@@ -179,7 +179,7 @@ text-decoration: underline;
             </div>
           </div>
           </div>
-  <div class="container" style="margin-top: 30px;">
+  <!-- <div class="container" style="margin-top: 30px;">
     
     <form>
       <div class="form-group">
@@ -198,7 +198,29 @@ text-decoration: underline;
         <button type="submit">Set</button>
       </div>
     </form>
-  </div>
+  </div> -->
+  <select id="dropdown" onchange="showDiv()">
+    <option value="div1">Internal</option>
+    <option value="div2">Domestic</option>
+    <option value="div3">International</option>
+  </select>
+
+  <div class="cont" style=" width: 80%; margin-top: 30px;  margin-bottom: 100px;  margin-left: 40px; border-radius: 5px; background-color: #dddddd;" id="credit">
+
+    <form action="transfer.php" method="post">
+        <label for="from_account">Your account number:</label>
+        <input type="text" id="from_account" name="from_account">
+
+        <label for="from_account">Receiver's account number:</label>
+        <input type="text" id="from_account" name="from_account">
+
+        <label for="to_account" style="margin-top: 13px;">Amount:</label>
+        <input type="text" id="to_account" name="to_account">
+      
+        <input type="submit" value="Submit">
+      </form>
+
+</div>
 </body>
 </html>
 
@@ -222,4 +244,31 @@ function redirectToPage5() {
               function redirectToPage8() {
                 window.location.href = "ContactUs.html"; // Replace with your desired URL
               }
+              function myfunction(){
+    const ele=document.getElementById('transfer').value;
+    
+    const debitdiv=document.getElementById('Internal');
+    debitdiv.setAttribute("hidden","hidden");
+
+    const creditdiv=document.getElementById('Domestic');
+    creditdiv.setAttribute("hidden","hidden");
+
+    const trddiv=document.getElementById('International');
+    trddiv.setAttribute("hidden","hidden");
+
+    if(ele=="Internal"){
+      creditdiv.removeAttribute("hidden");
+
+    }else{
+      if(ele=="Domestic"){
+        debitdiv.removeAttribute("hidden");
+      }else{
+        trddiv.removeAttribute("hidden")
+      }
+    }
+
+    
+
+   
+  }
 </script>
