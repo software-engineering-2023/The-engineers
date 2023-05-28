@@ -321,7 +321,7 @@ text-decoration: underline;
         function submitForm(){
           var reason = document.getElementById("reason").value;
           var amount = document.getElementById("amount").value;
-          if (reason == "" && amount == ""){
+          if (reason == "" || amount == ""){
             alert("Please state your reason and the amount you want");
           }
           else{
