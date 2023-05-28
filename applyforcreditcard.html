@@ -267,45 +267,66 @@ text-decoration: underline;
         <body>
             <!-- <label for="account-number">Account number</label>
             <input type="text" id="account-number" name="account-number"> -->
-            <label for="account-number">Account number</label>
-                <select id="account-number" name="account-number" style="width: 600px;background-color: lightgrey; height: 50px; ">
-                    <option value="12345">99999</option>
-                    <option value="67890">88888</option>
-                    <option value="13579">77777</option>
-                  </select>
+            <label for="account-number">First Name</label>
+            <input type="text" id="Fname" name="account-number" placeholder="Nada" >
         </body>
           </div>
           <div>
-            <title>Reason</title>
-            <style>
-                input[type="text"] {
-                    width: 600px;
-                    background-color: lightgrey;
-                }
-            </style>
-        </head>
-        <body>
-            <label for="account-number">Reason</label>
-            <input type="text" id="reason" name="account-number" placeholder="I need the loan to pay for a car installment" >
-        </body>
+            <body>
+                <label for="account-number">Last Name</label>
+                <input type="text" id="Lname" name="account-number" placeholder="Al azab" >
+            </body>
+
+
+          </div>
+          
+          <div>
+            <body>
+                <label for="account-number">Address</label>
+                <input type="text" id="Address" name="account-number" placeholder="36 Ahmed Medhat street" >
+            </body>
+
+
           </div>
           <div>
-            <title>Ammount</title>
-            <style>
-                input[type="text"] {
-                    width: 600px;
-                    background-color: lightgrey;
-                }
-            </style>
-        </head>
-        <body>
-            <label for="account-number">Amount</label>
-            <input type="text" id="amount" name="account-number" placeholder="$15000" >           
+            <body>
+                <label for="account-number">Email</label>
+                <input type="text" id="email" name="account-number" placeholder="mariaam.ashraaf@gmail.com" >
+            </body>
+
+
+          </div>
           <div>
-            <button type="button" class="btn btn-primary" style="margin-top: 10px;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
+            <body>
+                <label for="account-number">Phone Number</label>
+                <input type="text" id="pno" name="account-number" placeholder="01141680033" >
+            </body>
+
+
+          </div>
+          <div>
+            <body>
+                <label for="account-number">Name on card</label>
+                <input type="text" id="nameoc" name="account-number" placeholder="Gaafar Al Omda" >
+            </body>
+
+
+          </div>
+          <div>
+            <body>
+                <label for="account-number">Date of birth</label>
+                <input type="date" id="dob" name="account-number"  >
+            </body>
+
+
+          
+          
+          
+            <button type="button" class="btn btn-primary" style="margin-top: 10px; margin-left: 360px ;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
           </div>
         </body>
           </div>
+        </div>
           <!-- <img src="loanmazen.png" style="width: 850px; margin-left: 667px;margin-top: -290px; height: auto;height: 667px;"> -->
     </div>
     </div>
@@ -319,13 +340,17 @@ text-decoration: underline;
           window.location.href = "homepage.html";
         }
         function submitForm(){
-          var reason = document.getElementById("reason").value;
-          var amount = document.getElementById("amount").value;
-          if (reason == "" || amount == ""){
-            alert("Please state your reason and the amount you want");
+          var fname = document.getElementById("Fname").value;
+          var lname = document.getElementById("Lname").value;
+          var email =document.getElementById("email").value;
+          var phone =document.getElementById("pno").value; 
+          var name =document.getElementById("nameoc").value;
+          var date =document.getElementById("dob").value;
+          if (fname == "" || lname == "" || email== "" ||phone== "" ||name== "" ||date== "" ){
+            alert("Please fill all your data");
           }
           else{
-          alert("Loan application was successful we will notify you when the banker reviwes it.");
+          alert("Your application for a credit card was successful we will notify you when the banker reviwes it.");
           window.location.href = "homepage.html";
           }
         }
