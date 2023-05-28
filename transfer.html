@@ -199,6 +199,7 @@ text-decoration: underline;
       </div>
     </form>
   </div> -->
+  <p>Balance : 50,000</p>
   <select id="dropdown" onchange="showDiv()">
     <option value="div1">Internal</option>
     <option value="div2">Domestic</option>
@@ -217,7 +218,8 @@ text-decoration: underline;
         <label for="to_account" style="margin-top: 13px;">Amount:</label>
         <input type="text" id="to_account" name="to_account">
       
-        <input type="submit" value="Submit">
+        <button button class="a" onclick="showPopup()">Transfer
+        </button>>
       </form>
 
 </div>
@@ -244,31 +246,11 @@ function redirectToPage5() {
               function redirectToPage8() {
                 window.location.href = "ContactUs.html"; // Replace with your desired URL
               }
-              function myfunction(){
-    const ele=document.getElementById('transfer').value;
-    
-    const debitdiv=document.getElementById('Internal');
-    debitdiv.setAttribute("hidden","hidden");
-
-    const creditdiv=document.getElementById('Domestic');
-    creditdiv.setAttribute("hidden","hidden");
-
-    const trddiv=document.getElementById('International');
-    trddiv.setAttribute("hidden","hidden");
-
-    if(ele=="Internal"){
-      creditdiv.removeAttribute("hidden");
-
-    }else{
-      if(ele=="Domestic"){
-        debitdiv.removeAttribute("hidden");
-      }else{
-        trddiv.removeAttribute("hidden")
-      }
-    }
-
-    
-
-   
-  }
+              function showPopup() {
+            document.getElementById('popupOverlay').style.display = 'flex';
+          }
+      
+          function closePopup() {
+            window.location.href = "homepage.html";
+          }
 </script>
