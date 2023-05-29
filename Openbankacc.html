@@ -410,7 +410,7 @@ text-decoration: underline;
                     }
                 </style>
                  <label for="account-number">Full Name</label>
-                 <input type="text" id="reason" name="account-number" placeholder="ex.Ahmed Medhat" >
+                 <input type="text" id="Fname" name="account-number" placeholder="ex.Ahmed Medhat" >
                  <div>
                   <title>Address</title>
                   <style>
@@ -420,10 +420,10 @@ text-decoration: underline;
                       }
                   </style>
                    <label for="account-number">Address</label>
-                   <input type="text" id="reason" name="account-number" placeholder="ex.Madinaty" >
+                   <input type="text" id="Lname" name="account-number" placeholder="ex.Madinaty" >
                    <div class="form-group">
                     <label for="recipient">Date Of Birth</label>
-                    <input type="date" id="recipient" name="recipient" required style="background-color: lightgrey;">
+                    <input type="date" id="dob" name="recipient" required style="background-color: lightgrey;">
                     <title>Phone Number</title>
                   <style>
                       input[type="text"] {
@@ -432,7 +432,7 @@ text-decoration: underline;
                       }
                   </style>
                    <label for="account-number">Phone Number</label>
-                   <input type="text" id="reason" name="account-number" placeholder="ex.01099308408" >
+                   <input type="text" id="pno" name="account-number" placeholder="ex.01099308408" >
                   </div>
                   <title>National ID</title>
                 <style>
@@ -442,7 +442,7 @@ text-decoration: underline;
                     }
                 </style>
                  <label for="account-number">National ID</label>
-                 <input type="text" id="reason" name="account-number" placeholder="ex.343983789464747" >
+                 <input type="text" id="nameoc" name="account-number" placeholder="ex.343983789464747" >
                </div>
                 <label for="account-number">Purpose</label>
                     <select id="account-number" name="account-number" style="width: 600px;background-color: lightgrey; height: 50px; ">
@@ -489,9 +489,19 @@ text-decoration: underline;
             </script>
              <script>
               function showPopup() {
-            document.getElementById('popupOverlay').style.display = 'flex';
+          var fname = document.getElementById("Fname").value;
+          var lname = document.getElementById("Lname").value;
+          var phone =document.getElementById("pno").value; 
+          var name =document.getElementById("nameoc").value;
+          var date =document.getElementById("dob").value;
+          if (fname == "" || lname == ""  ||phone== "" ||name== "" ||date== "" ){
+            alert("Please fill all your data");
           }
-      
+          else{
+            alert("Application was successful, you will be notified when the banker reviews your applicat.");
+            window.location.href ="homepage.html";
+          }
+        }
           function closePopup() {
             window.location.href = "homepage.html";
           }
