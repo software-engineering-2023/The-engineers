@@ -39,8 +39,8 @@ ul.navbar {
   
       .button a {
           display: block;
-          width: 250px;
-          height: 50px;
+          width: 100px;
+          height: 40px;
           border: 2px solid #000;
           text-align: center;
           line-height: 40px;
@@ -49,6 +49,10 @@ ul.navbar {
            color:white; 
           border-radius: 10px;
           background-color: #267326;
+          position: absolute;
+          left: 10px;
+          top: 700px;
+
       }
       .button a:hover{
         background-color: white;
@@ -102,24 +106,7 @@ ul.navbar {
         color: white; /* Set the desired color */
       }
   
-      .button a {
-          display: block;
-          width: 250px;
-          height: 50px;
-          border: 2px solid #000;
-          text-align: center;
-          line-height: 40px;
-          margin-bottom: 10px;
-          text-decoration: none;
-           color:white; 
-          border-radius: 10px;
-          background-color: #267326;
-      }
-      .button a:hover{
-        background-color: white;
-        color: black;
-      }
-
+      
       .test{border: none;
               
             }
@@ -318,9 +305,11 @@ text-decoration: underline;
     </div>
     </div>
         </div>
-        <div style="position: fixed; bottom: 0; left: 0; margin: 20px;">
-          <button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="redirectToPage()">Back</button>
-        </div>
+      
+    <div class="button">
+              <a href="homepage.html">Return</a>
+          </div>
+
         </body>
         <script>
           function redirectToPage5() {
