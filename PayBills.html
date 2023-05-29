@@ -231,8 +231,7 @@
     function redirectToPage5() {
                 window.location.href = "Terms.html"; // Replace with your desired URL
               }
-            </script>
-             <script>
+            
               function redirectToPage6() {
                 window.location.href = "Branches.html"; // Replace with your desired URL
               }
@@ -246,18 +245,12 @@
               function redirectToPage8() {
                 window.location.href = "ContactUs.html"; // Replace with your desired URL
               }
-    function redirectToPage() {
-      window.location.href = "PayWithCreditCard.html"; // Replace with your desired URL
-    }
   </script>
   <!-- <a href="C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"></a> -->
   <button class="b" onclick="functionn()">
     Pay with bank account
 </button> 
 <script>
-  function redirectToPage2() {
-    window.location.href = "PayWithBankAccount.html"; // Replace with your desired URL
-  }
   function redirectToPage0() {
     window.location.href = "homepage.html";
   }
@@ -265,12 +258,13 @@
           var billid = document.getElementById("Bill").value;
           var num = document.getElementById("Num").value;
   if(billid == ""||num ==""){
-    alert("Please fill the labels");
+    alert("Please fill the data");
   }
   else{
     alert("Bill paid successfully");
     window.close();
      window.open("homepage.html");
+    // redirectToPage0();
   }
         }
 </script>
