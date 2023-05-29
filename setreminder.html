@@ -257,11 +257,11 @@ text-decoration: underline;
     <form>
       <div class="form-group">
         <label for="sender">Bill type:</label>
-        <input type="checkbox" id="sender" name="sender" placeholder="Enter sender's name" ><label style="display: inline;">Water</label>
+        <input type="checkbox" id="x" name="sender" placeholder="Enter sender's name" ><label style="display: inline;">Water</label>
 
-        <input type="checkbox" id="sender" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Electricity</label>
-        <input type="checkbox" id="sender" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Telephone</label>
-        <input type="checkbox" id="sender" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Gas</label>
+        <input type="checkbox" id="y" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Electricity</label>
+        <input type="checkbox" id="z" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Telephone</label>
+        <input type="checkbox" id="a" name="sender" placeholder="Enter sender's name" style="margin-left: 13px;"><label style="display: inline;">Gas</label>
     </div>
       <div class="form-group">
         <label for="recipient">Set date and time:</label>
@@ -294,7 +294,19 @@ text-decoration: underline;
 
 <script>
 function showPopup() {
-            document.getElementById('popupOverlay').style.display = 'flex';
+          const checkbox = document.getElementById('x');
+          const checkbox2 = document.getElementById('y');
+          const checkbox3 = document.getElementById('z');
+          const checkbox4 = document.getElementById('a');
+          var lname = document.getElementById("recipient").value;
+          if(lname=="" || (!checkbox.checked&& !checkbox2.checked&& !checkbox3.checked&& !checkbox4.checked)){
+            alert("Please choose bill type and a date");
+          }
+          else{
+            alert("A reminder has been set");
+            window.close("setreminder.html");
+            window.open("homepage.html");
+          }
           }
       
           function closePopup() {
