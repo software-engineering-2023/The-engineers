@@ -39,8 +39,8 @@ ul.navbar {
   
       .button a {
           display: block;
-          width: 250px;
-          height: 50px;
+          width: 100px;
+          height: 40px;
           border: 2px solid #000;
           text-align: center;
           line-height: 40px;
@@ -49,6 +49,10 @@ ul.navbar {
            color:white; 
           border-radius: 10px;
           background-color: #267326;
+          position: absolute;
+          left: 10px;
+          top: 700px;
+
       }
       .button a:hover{
         background-color: white;
@@ -102,24 +106,7 @@ ul.navbar {
         color: white; /* Set the desired color */
       }
   
-      .button a {
-          display: block;
-          width: 250px;
-          height: 50px;
-          border: 2px solid #000;
-          text-align: center;
-          line-height: 40px;
-          margin-bottom: 10px;
-          text-decoration: none;
-           color:white; 
-          border-radius: 10px;
-          background-color: #267326;
-      }
-      .button a:hover{
-        background-color: white;
-        color: black;
-      }
-
+      
       .test{border: none;
               
             }
@@ -180,6 +167,27 @@ text-decoration: underline;
     .button-container {
       text-align: center;
     }
+    .submit {
+          display: block;
+          width: 100px;
+          height: 40px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          /* position: absolute;
+          left: 990px;
+          top: 400px; */
+
+      }
+      .submit:hover{
+        background-color: white;
+        color: black;
+      }
 
    .button-container button {
         display: block;
@@ -310,7 +318,7 @@ text-decoration: underline;
             <label for="account-number">Amount</label>
             <input type="text" id="amount" name="account-number" placeholder="$15000" >           
           <div>
-            <button type="button" class="btn btn-primary" style="margin-top: 10px;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
+            <button type="submit"  class="submit" style="margin-top: 10px;width: 100px;"  onclick="submitForm()">Submit</button>
           </div>
         </body>
           </div>
@@ -318,9 +326,11 @@ text-decoration: underline;
     </div>
     </div>
         </div>
-        <div style="position: fixed; bottom: 0; left: 0; margin: 20px;">
-          <button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="redirectToPage()">Back</button>
-        </div>
+      
+    <div class="button">
+              <a href="homepage.html">Return</a>
+          </div>
+
         </body>
         <script>
           function redirectToPage5() {

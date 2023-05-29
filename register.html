@@ -35,8 +35,12 @@
 		
 		
 		<button class="btn" style="margin-top:10px;" onclick="register()" ;>Sign up</button>
+		
 	</form>
 </body>
+<div>
+	<button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="back()">Back</button>
+</div>
 </html>
 <script>
 function register(){
@@ -60,6 +64,9 @@ var password = document.getElementById("password").value;
 	}
 
 
+}
+function back(){
+	window.location.href = "login.html";
 }
 
 </script>

@@ -51,6 +51,29 @@
         background-color: white;
         color: black;
       }
+    </style>
+  <style>
+    .buttonn {
+        display: block;
+       
+        width: 150px;
+        height: 50px;
+        border: 2px solid #000;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 10px;
+        text-decoration: none;
+         color:white; 
+        border-radius: 10px;
+        background-color: #267326;
+        position: absolute;
+        left: 10px;
+        top: 700px;
+    }
+    .buttonn:hover{
+      background-color: white;
+      color: black;
+    }
   </style>
   </head>
   <body >
@@ -118,5 +141,17 @@
       <button type="button" class=" btn button " style="margin-left: 70%;" onclick ="submitpop()">Submit</button>
      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+  
+<div class="buttonn" onclick="redirect()">Back
+  <!-- <a href="homepage.html">Return</a> -->
+
+</div>
+
+
+</body>
 </html>
+<script>
+function redirect(){
+wondow.location.href="homepage.html";
+}
+</script>

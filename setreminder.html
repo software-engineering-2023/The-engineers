@@ -113,6 +113,31 @@ text-decoration: underline;
       
       
     }
+    
+    .button a {
+          display: block;
+          width: 100px;
+          height: 40px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          left: 10px;
+          top:700px;
+      }
+      
+          
+      .button a:hover{
+        background-color: white;
+        color: black;
+      }
+      
+
 
     .container {
       max-width: 500px;
@@ -249,7 +274,7 @@ text-decoration: underline;
       <div class="overlay" id="popupOverlay" style="display: none;">
         <div class="popup">
           <h2 class="no-underline">Your reminder been set successfully</h2>
-          <button class="c" onclick="closePopup()" style="display:inline-block;">Return</button>
+          <button class="c" onclick="closePopup()" style="display:inline-block;">Back</button>
         </div>
       </div>
       <div class="button-container">
@@ -257,6 +282,13 @@ text-decoration: underline;
       </div>
     </form>
   </div>
+  
+  
+
+<div class="button">
+          <a href="homepage.html">Back</a>
+      </div>
+
 </body>
 </html>
 
