@@ -67,13 +67,21 @@ function submitpop(){
     else 
     alert("Submitted");
 }
-var previousPage = "login.html";
+/*var previousPage ;
 function redirectToPage2(){
-    window.open("previousPage");
+    window.open(previousPage);
 }
 function setPreviousPage(){
-    var path = window.location.pathname;
-    var page = path.split("/").pop()
-    previousPage =page;
+    const page = location.href.split("/").slice(-1).toString().split("?")[0];
+   previousPage = page;
    
+}*/
+
+function Alert(){
+    var notempty = document.getElementById('exampleFormControlTextarea1').value;
+    if (notempty === ""){
+    alert("Nothing To Post!!");
+    }
+    else
+    alert("Posted Successfully")
 }
