@@ -67,3 +67,13 @@ function submitpop(){
     else 
     alert("Submitted");
 }
+var previousPage = "login.html";
+function redirectToPage2(){
+    window.open("previousPage");
+}
+function setPreviousPage(){
+    var path = window.location.pathname;
+    var page = path.split("/").pop()
+    previousPage =page;
+   
+}
