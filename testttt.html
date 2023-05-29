@@ -181,6 +181,66 @@ ul.navbar {
         background-color: white;
         color: black;
       }
+      .g {
+          display: block;
+          width: 100px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top : 430px;
+          left : 250px;
+      }
+      .g:hover{
+        background-color: white;
+        color: black;
+      }
+      .j {
+          display: block;
+          width: 100px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top : 580px;
+          left : 250px;
+      }
+      .j:hover{
+        background-color: white;
+        color: black;
+      }
+      .l {
+          display: block;
+          width: 100px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top : 550px;
+          left : 250px;
+      }
+      .l:hover{
+        background-color: white;
+        color: black;
+      }
       .b {
           display: block;
           width: 150px;
@@ -365,7 +425,40 @@ text-decoration: underline;
         background-color: white;
         color: black;
       }
-      
+     .cont1 {
+      /* width: 600px;
+      height: 280px; margin-top: 100px;  margin-bottom: 0px; 
+      margin-left: 40px; border-radius: 5px; padding-left: 20px ; 
+      background-color: #dddddd; */
+      width: 600px;
+      height: 280;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+      }
+      .cont2{
+        width: 600px;
+       height: 420px; 
+      margin-top: 40px;  margin-bottom:0px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius:5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .cont3{
+        width: 600px;
+       height: 460px; 
+      margin-top: 40px;  margin-bottom:0px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius:5px;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
 
 </style>
 	<title>Document</title>
@@ -418,20 +511,22 @@ text-decoration: underline;
         
         </div>
 </div>
-<div class="center">
-  <div>
-<h>Balance: 100,000</h>
-</div>
 <div>
-	<label for="transfer" style="margin-top: 20px;">Select Transfer type:</label>
-   <select id="transfer" style=" width: 30%;" onchange="myfunction()">
- 
-       <option value="debit" selected>Internal</option>
-       <option value="credit">Domestic</option>
-       <option value="3rd">International</option>
-   </select>
+  <h3>Balance: 100,000</h3>
   </div>
-   <div class="cont" style=" width: 600px; margin-top: 100px;  margin-bottom: 0px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="debit">
+  <div>
+    <label for="transfer" style="margin-top: 20px;">Select Transfer type:</label>
+     <select id="transfer" style=" width: 30%;" onchange="myfunction()">
+   
+         <option value="debit" selected>Internal</option>
+         <option value="credit">Domestic</option>
+         <option value="3rd">International</option>
+     </select>
+    </div>
+<div class="center">
+  
+
+   <div class="cont1"  id="debit">
 
     <form action="transfer.php" method="post">
         <label for="from_account">Sender's  Account Number:</label>
@@ -443,12 +538,12 @@ text-decoration: underline;
         <input type="text" id="7" name="to_account" style="width: 200px;">
       
       
-        <button class="a">Transfer</button>
+        <!-- <button class="a">Transfer</button> -->
       </form>
-
+      <button class="g" onclick="funct()">Transfer</button>
 </div>
 
-<div class="cont" style=" width: 600px; margin-top: 20px;  margin-bottom: 00px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="credit" hidden="hidden">
+<div class="cont2"  id="credit" hidden="hidden">
 
     <form action="transfer.php" method="post" class="modern-form">
         <div class="form-group">
@@ -471,13 +566,13 @@ text-decoration: underline;
           <input type="text" id="8" name="to_account" style="width: 200px;">
         </div>
         
-        <button class="a">Transfer</button>
+        <!-- <button class="a">Transfer</button> -->
       </form>
-      
+      <button class="l" onclick="funct()">Transfer</button>
 
 </div>
 
-<div class="cont" style=" width: 600px; margin-top: 20px;  margin-bottom:0px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="3rd" hidden="hidden">
+<div class="cont3"  id="3rd" hidden="hidden">
 
     <form action="transfer.php" method="post">
         <label for="from_account">Sender's Account Number:</label>
@@ -494,9 +589,9 @@ text-decoration: underline;
   
        
       </form>
-    
+      <button class="j" onclick="funct()">Transfer</button>
 </div>
-<button class="a" onclick="funct()">Transfer</button>
+<!-- <button class="a" onclick="funct()">Transfer</button> -->
 </div>
 <div class="button">
   <a href="homepage.html">Back</a>
