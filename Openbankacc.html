@@ -174,8 +174,8 @@ ul.navbar {
           border-radius: 10px;
           background-color: #267326;
           position: absolute;
-          top : 600px;
-          left : 20px;
+          top : 530px;
+          left : 250px;
       }
       .a:hover{
         background-color: white;
@@ -183,7 +183,7 @@ ul.navbar {
       }
       .b {
           display: block;
-          width: 250px;
+          width: 150px;
           height: 50px;
           border: 2px solid #000;
           text-align: center;
@@ -194,7 +194,7 @@ ul.navbar {
           border-radius: 10px;
           background-color: #267326;
           position: absolute;
-          top : 600px;
+          top : 530px;
           left : 520px;
       }
       .b:hover{
@@ -282,7 +282,12 @@ text-decoration: underline;
       border-radius: 5px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-
+    .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
     h2 {
       text-align: center;
     }
@@ -381,7 +386,9 @@ text-decoration: underline;
                  
                 </div>
               </div>
+              
               </div>
+              <div class = "center">
               <div style="margin-left: 18px;">
                 <h1>Open a bank account</h1>
               <div>
@@ -465,8 +472,13 @@ text-decoration: underline;
          </div>
              </div>
              
-               <button class="b" style = "width: 100px;" onclick="redirectToPage()">Back</button>
-             
+              
+              </div>
+              <style>
+                .b{ position:absolute; top:700px; left: 7px;
+                }
+              </style>
+              <button class="b" style = "width: 100px;" onclick="redirectToPage()">Back</button>
 </body>
 </html>
 <script>
