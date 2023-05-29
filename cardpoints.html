@@ -122,6 +122,27 @@
         background-color: white;
         color: black;
       }
+      .buttons{
+          display: block;
+          width: 140px;
+          height: 40px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+        position: absolute;
+        left: 390px;
+        top: 0px ;
+
+      }
+      .buttons:hover{
+        background-color: white;
+        color: black;
+      }
 
       .test{border: none;
               
@@ -218,7 +239,7 @@ text-decoration: underline;
                         }
                     </style>
                     <h1>My Points Balance:</h1>
-                    <h2>20000</h2>
+                    <h2 id="points">   </h2>
                 </div>
                 
 
@@ -265,33 +286,73 @@ text-decoration: underline;
           </div>
 
                   <div class="button-container">
-                    <button onclick="showPopup()" type="submit">Redeem for 1000 points</button>
-                    <button onclick="showPopup()" type="submit">Redeem for 5000 points</button>
-                    <button onclick="showPopup()" type="submit">Redeem for 6000 points</button>
-                    <button onclick="showPopup()" type="submit">Redeem for 10000 points</button>
+                    <button onclick=" performActions1()" type="submit">Redeem for 1000 points</button>
+                    <button onclick=" performActions2()"  type="submit">Redeem for 5000 points</button>
+                    <button onclick=" performActions3()" type="submit">Redeem for 6000 points</button>
+                    <button onclick=" performActions4()"  type="submit">Redeem for 10000 points</button>
 
                   </div>
 
-
-             
-
-
-
-
-
-
-
-
+                  <div style="position: absolute; left: 10px; top: 100px;">
+                  <label style="font-size: 20px;">Credit Card Number</label>
+                  <input type="text" required id="Num">
+                  <button class="buttons" onclick="pointsDisplay()">show points</button>
+                </div>
 </body>
 </html>
 <script>
 function showPopup() {
             document.getElementById('popupOverlay').style.display = 'flex';
           }
+          function pointsDisplay(){
+//     var s = "20000";
+//     document.getElementById("points").value =s;
+// }
+// function changeText() {
+            var textElement = document.getElementById("points");
+            textElement.textContent = "20000";
+        }
+        function redeem1(){
+
+            var textElement = document.getElementById("points");
+            textElement.textContent = "19000";
+        }
+        function redeem2(){
+
+var textElement = document.getElementById("points");
+textElement.textContent = "15000";
+}
+function redeem3(){
+
+var textElement = document.getElementById("points");
+textElement.textContent = "14000";
+}
+function redeem4(){
+
+var textElement = document.getElementById("points");
+textElement.textContent = "10000";
+}
+function performActions1() {
+             showPopup();
+            redeem1();
+        }
+        function performActions2() {
+          showPopup();
+            redeem2();
+        }
+        function performActions3() {
+          showPopup();
+            redeem3();
+        }
+        function performActions4() {
+          showPopup();
+          redeem4();
+        }
       
           function closePopup() {
             window.location.href = "homepage.html";
           }
+
     function redirectToPage5() {
                 window.location.href = "Terms.html"; // Replace with your desired URL
               }
