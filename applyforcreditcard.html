@@ -199,6 +199,48 @@ text-decoration: underline;
       background-color: white;
       color: #000;
     }
+    .c {
+          display: block;
+          width: 80px;
+          height: 40px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top:608px;
+          left:980px;
+        
+      }
+      .c:hover{
+        background-color: white;
+        color: black;
+      }
+      .b {
+          display: block;
+          width: 80px;
+          height: 40px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top:500px;
+          left:40px;
+        
+      }
+      .b:hover{
+        background-color: white;
+        color: black;
+      }
   </style>
 </head>
 <body>
@@ -252,7 +294,15 @@ text-decoration: underline;
           </div>
     </div>
           <!-- end of the header -->
-          
+          <style>
+            .center {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+         <div class="center" >
           <div style="margin-left: 18px;">
             <h1>Application</h1>
           <div>
@@ -322,7 +372,7 @@ text-decoration: underline;
           
           
           
-            <button type="button" class="btn btn-primary" style="margin-top: 10px; margin-left: 360px ;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
+            <button type="button" class="b" style="margin-top: 10px; margin-left: 360px ;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
           </div>
         </body>
           </div>
@@ -331,10 +381,10 @@ text-decoration: underline;
     </div>
     </div>
         </div>
-        <div style="position: fixed; bottom: 0; left: 0; margin: 20px;">
-          <button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="redirectToPage()">Back</button>
-        </div>
         
+          <button type="button" class="c" style="background-color: #267326; width: 100px;" onclick="redirectToPage()">Back</button>
+        
+      </div> 
         <script>
         function redirectToPage() {
           window.location.href = "homepage.html";

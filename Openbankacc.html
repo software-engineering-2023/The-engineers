@@ -101,7 +101,25 @@ ul.navbar {
     .form-group {
       margin-bottom: 20px;
     }
-
+    .overlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 9999;
+            }
+        
+            .popup {
+              background-color: #ffffff;
+              padding: 20px;
+              border-radius: 5px;
+              text-align: center;
+            }
     label {
       display: block;
       font-weight: bold;
@@ -143,6 +161,46 @@ ul.navbar {
       color: #000;
     }
 
+    .a {
+          display: block;
+          width: 100px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top : 600px;
+          left : 20px;
+      }
+      .a:hover{
+        background-color: white;
+        color: black;
+      }
+      .b {
+          display: block;
+          width: 250px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+          position: absolute;
+          top : 600px;
+          left : 520px;
+      }
+      .b:hover{
+        background-color: white;
+        color: black;
+      }
         ul.navbar li a {
             display: block;
             color: rgb(0, 0, 0);
@@ -158,7 +216,24 @@ ul.navbar {
       .navbar-toggler-icon {
         color: white; /* Set the desired color */
       }
-  
+      .c{
+                  display: block;
+                width: 150px;
+                height: 40px;
+                border: 2px solid #000;
+                text-align: center;
+                line-height: 40px;
+                margin-bottom: 10px;
+                text-decoration: none;
+                 color:white; 
+                border-radius: 10px;
+                background-color: #267326;
+              
+                }
+                .c:hover{
+                  background-color: white;
+                  color: black;
+                } 
       .button a {
           display: block;
           width: 250px;
@@ -262,166 +337,166 @@ text-decoration: underline;
 
     <!-- start of header -->
     <div  style="padding: 0;">
-    <nav>
-        <ul class="navbar">
-         
-          <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- <div class="navbuttons" > -->
-                    <li><a href="homepage.html" class="t1" style="color: white;">Home</a></li>
-            <li><a href="login.html"style="color: white;">Logout</a></li> <!-- login pageee -->
-            <li><a href="Notifications.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">4</span></a></li>
-  
-            <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
-            <!-- #912626 -->
-        </ul>
-      <!-- </div>  -->
-    </nav>
-      
-      
-      <div> 
-        
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel" >Menus</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-          
-            
-            <ul>
-              
-              <li><div> <button class="test" onclick="redirectToPage7()" style="background-color: white;" >About us</button></div></li>
-  
-              <li><div> <button class="test" onclick="redirectToPage8()" style="background-color: white;" >Contact us</button></div></li>
-  
-              <li><div> <button class="test" onclick="redirectToPage6()" style="background-color: white;" >Branches</button></div></li>
-  
-              <li><div> <button class="test" onclick="redirectToPage5()" style="background-color: white;" >Terms and conditions</button></div></li>
-  
-              <!-- <li>   <a href="Terms.html">Page 2</a> </li> -->
-              
-              </ul>
+        <nav>
+            <ul class="navbar">
              
-            </div>
-          </div>
-          </div>
-    </div>
-          <!-- end of the header -->
+              <button class="btn transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- <div class="navbuttons" > -->
+                        <li><a href="homepage.html" class="t1" style="color: white;">Home</a></li>
+                <li><a href="login.html"style="color: white;">Logout</a></li> <!-- login pageee -->
+                <li><a href="Notifications.html"style="color: white;"> Notifications <span class="badge text-bg-secondary">4</span></a></li>
+      
+                <img src="Logo3.png" alt="Bootstrap" width="270px" height="80"  style="background-color: #3636a3">
+                <!-- #912626 -->
+            </ul>
+          <!-- </div>  -->
+        </nav>
           
-          <div style="margin-left: 18px;">
-            <h1>Bank Account Application</h1>
-          <div>
-            <title>Account Number</title>
-            <style>
-                input[type="text"] {
-                    width: 600px;
-                    background-color: lightgrey;
-                }
-            </style>
-        </head>
-        <body>
-            <!-- <label for="account-number">Account number</label>
-            <input type="text" id="account-number" name="account-number"> -->
-            <label for="account-number">First Name</label>
-            <input type="text" id="Fname" name="account-number" placeholder="Nada" >
-        </body>
-          </div>
-          <div>
+          
+          <div> 
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel" >Menus</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+              
+                
+                <ul>
+                  
+                  <li><div> <button class="test" onclick="redirectToPage7()" style="background-color: white;" >About us</button></div></li>
+      
+                  <li><div> <button class="test" onclick="redirectToPage8()" style="background-color: white;" >Contact us</button></div></li>
+      
+                  <li><div> <button class="test" onclick="redirectToPage6()" style="background-color: white;" >Branches</button></div></li>
+      
+                  <li><div> <button class="test" onclick="redirectToPage5()" style="background-color: white;" >Terms and conditions</button></div></li>
+      
+                  <!-- <li>   <a href="Terms.html">Page 2</a> </li> -->
+                  
+                  </ul>
+                 
+                </div>
+              </div>
+              </div>
+              <div style="margin-left: 18px;">
+                <h1>Open a bank account</h1>
+              <div>
+                <title>Account Number</title>
+                <style>
+                    input[type="text"] {
+                        width: 600px;
+                        background-color: lightgrey;
+                    }
+                </style>
+            </head>
             <body>
-                <label for="account-number">Last Name</label>
-                <input type="text" id="Lname" name="account-number" placeholder="Al azab" >
+              <div>
+                <title>Full Name</title>
+                <style>
+                    input[type="text"] {
+                        width: 600px;
+                        background-color: lightgrey;
+                    }
+                </style>
+                 <label for="account-number">Full Name</label>
+                 <input type="text" id="reason" name="account-number" placeholder="ex.Ahmed Medhat" >
+                 <div>
+                  <title>Address</title>
+                  <style>
+                      input[type="text"] {
+                          width: 600px;
+                          background-color: lightgrey;
+                      }
+                  </style>
+                   <label for="account-number">Address</label>
+                   <input type="text" id="reason" name="account-number" placeholder="ex.Madinaty" >
+                   <div class="form-group">
+                    <label for="recipient">Date Of Birth</label>
+                    <input type="date" id="recipient" name="recipient" required style="background-color: lightgrey;">
+                    <title>Phone Number</title>
+                  <style>
+                      input[type="text"] {
+                          width: 600px;
+                          background-color: lightgrey;
+                      }
+                  </style>
+                   <label for="account-number">Phone Number</label>
+                   <input type="text" id="reason" name="account-number" placeholder="ex.01099308408" >
+                  </div>
+                  <title>National ID</title>
+                <style>
+                    input[type="text"] {
+                        width: 600px;
+                        background-color: lightgrey;
+                    }
+                </style>
+                 <label for="account-number">National ID</label>
+                 <input type="text" id="reason" name="account-number" placeholder="ex.343983789464747" >
+               </div>
+                <label for="account-number">Purpose</label>
+                    <select id="account-number" name="account-number" style="width: 600px;background-color: lightgrey; height: 50px; ">
+                        <option value="12345">Savings</option>
+                        <option value="67890">Personal use</option>
+                        <option value="13579">Business</option>
+                      </select>
             </body>
+              </div>
+              <div class="overlay" id="popupOverlay" style="display: none;">
+                <div class="popup">
+                  <h2 class="no-underline">Bank account created successfully </h2>
+                  <button class="c" onclick="closePopup()" style="display:inline-block;">Return</button>
+                </div>
+              </div>
+              <div>
+                
+               <div>
+                            
+               <div>
+                 <button class="a" onclick="showPopup()">Submit</button>
+               </div>
+             </body>
+               </div>
+               <!-- <img src="loanmazen.png" style="width: 850px; margin-left: 667px;margin-top: -290px; height: auto;height: 667px;"> -->
+         </div>
+         </div>
+             </div>
+             
+               <button class="b" style = "width: 100px;" onclick="redirectToPage()">Back</button>
+             
+</body>
+</html>
+<script>
+    function redirectToPage5() {
+                window.location.href = "Terms.html"; // Replace with your desired URL
+              }
 
-
-          </div>
-          
-          <div>
-            <body>
-                <label for="account-number">Address</label>
-                <input type="text" id="Address" name="account-number" placeholder="36 Ahmed Medhat street" >
-            </body>
-
-
-          </div>
-          <div>
-            <body>
-                <label for="account-number">Email</label>
-                <input type="text" id="email" name="account-number" placeholder="mariaam.ashraaf@gmail.com" >
-            </body>
-
-
-          </div>
-          <div>
-            <body>
-                <label for="account-number">Phone Number</label>
-                <input type="text" id="pno" name="account-number" placeholder="01141680033" >
-            </body>
-
-
-          </div>
-          <div>
-            <title>Occupation</title>
-            <style>
-                input[type="text"] {
-                    width: 600px;
-                    background-color: lightgrey;
-                }
-            </style>
-        </head>
-        <body>
-            <!-- <label for="account-number">Account number</label>
-            <input type="text" id="account-number" name="account-number"> -->
-            <label for="account-number">Occupation</label>
-                <select id="account-number" name="account-number" style="width: 600px;background-color: lightgrey; height: 50px; ">
-                    <option value="12345">Student</option>
-                    <option value="67890">Under Graduate</option>
-                    <option value="13579">Graduate</option>
-                  </select>
-        </body>
-          </div>
-          <div>
-            <body>
-                <label for="account-number">Date of birth</label>
-                <input type="date" id="dob" name="account-number"  >
-            </body>
-
-
-          
-          
-          
-            <button type="button" class="btn btn-primary" style="margin-top: 10px; margin-left: 360px ;background-color: #267326;width: 100px;" onclick="submitForm()">Submit</button>
-          </div>
-        </body>
-          </div>
-        </div>
-          <!-- <img src="loanmazen.png" style="width: 850px; margin-left: 667px;margin-top: -290px; height: auto;height: 667px;"> -->
-    </div>
-    </div>
-        </div>
-        <div style="position: fixed; bottom: 0; left: 0; margin: 20px;">
-          <button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="redirectToPage()">Back</button>
-        </div>
-        
-        <script>
-        function redirectToPage() {
-          window.location.href = "homepage.html";
-        }
-        function submitForm(){
-          var fname = document.getElementById("Fname").value;
-          var lname = document.getElementById("Lname").value;
-          var email =document.getElementById("email").value;
-          var phone =document.getElementById("pno").value; 
-          // var name =document.getElementById("nameoc").value;
-          
-          if (fname == "" || lname == "" || email== "" ||phone== ""  ){
-            alert("Please fill all your data");
+            </script>
+             <script>
+              function showPopup() {
+            document.getElementById('popupOverlay').style.display = 'flex';
           }
-          else{
-          alert("Your application for opening a new bank account is successful.");
-          window.location.href = "homepage.html";
+      
+          function closePopup() {
+            window.location.href = "homepage.html";
           }
-        }
-        </script>
-
+              function redirectToPage6() {
+                window.location.href = "Branches.html"; // Replace with your desired URL
+              }
+            </script>
+           <script>
+            function redirectToPage7() {
+              window.location.href = "AboutUs.html"; // Replace with your desired URL
+            }
+          </script>
+             <script>
+              function redirectToPage8() {
+                window.location.href = "ContactUs.html"; // Replace with your desired URL
+              }
+              function redirectToPage(){
+                window.location.href = "homepage.html";
+              }
+</script>
