@@ -58,14 +58,20 @@ function submitpopCR(){
     else
     if(document.getElementById("exampleFormControlInput1").value==="")
     alert("Please write a valid credit card number");
-    else
+    else{
     alert("Submitted");
+    window.location.href = "homepage.html";
+      
+    }
 }
 function submitpop(){
     if(document.getElementById("exampleFormControlTextarea1").value==="")
     alert("Please write a problem");
-    else 
+    else {
     alert("Submitted");
+        window.location.href = "homepage.html";
+      
+    }
 }
 /*var previousPage ;
 function redirectToPage2(){

@@ -226,6 +226,9 @@
   <input type="text"  id="Num">
    <button class="a" onclick="functionn()" style="background-color: 267326;">Pay with credit card
   </button>
+  <button class="b" onclick="functionn()">
+    Pay with bank account
+</button> 
   <script>
     
     function redirectToPage5() {
@@ -247,13 +250,11 @@
               }
   </script>
   <!-- <a href="C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"></a> -->
-  <button class="b" onclick="functionn()">
-    Pay with bank account
-</button> 
+ 
 <script>
-  function redirectToPage0() {
-    window.location.href = "homepage.html";
-  }
+  // function redirectToPage0() {
+  //   window.location.href = "homepage.html";
+  // } -->
   function functionn(){
           var billid = document.getElementById("Bill").value;
           var num = document.getElementById("Num").value;
@@ -262,10 +263,9 @@
   }
   else{
     alert("Bill paid successfully");
-    window.close();
-     window.open("homepage.html");
-    // redirectToPage0();
-  }
+    // window.close();
+    //  window.open("homepage.html");
+    window.location.href = "homepage.html";  }
         }
 </script>
 

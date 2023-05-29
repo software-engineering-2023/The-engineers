@@ -3,7 +3,46 @@
 <head>
 	<title>Registration</title>
 	<link rel="stylesheet" href="main.css">
+<style>
+	.btn {
+          display: block;
+          width: 70px;
+          height: 20px;
+          border: 2px solid #000;
+          text-align: center;
+          /* line-height: 40px; */
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+		  position: relative;
+		  left: 130px;
 
+      }
+      .btn:hover{
+        background-color: white;
+        color: black;
+      }
+	  .back{
+          display: block;
+          width: 80px;
+          height: 50px;
+          border: 2px solid #000;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 10px;
+          text-decoration: none;
+           color:white; 
+          border-radius: 10px;
+          background-color: #267326;
+      }
+      .back:hover{
+        background-color: white;
+        color: black;
+      }
+
+</style>
 </head>
 <body>
 	<img src="images/engineers.png" style="width: 270px; margin-left: 630px;">
@@ -28,41 +67,43 @@
 		</div>
 		
 		
-
-			
-
-		
-		
-		
-		<button class="btn" style="margin-top:10px;" onclick="register()" ;>Sign up</button>
+		<a class="btn" style="margin-top:10px;" onclick="register()" ;>Sign up</a>
 		
 	</form>
 </body>
 <div>
-	<button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;" onclick="back()">Back</button>
+	<button type="button" class="back"  onclick="back()">Back</button>
 </div>
 </html>
 <script>
 function register(){
+
 var username = document.getElementById("username").value;
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
+
+var first = document.getElementById("first-name").value;
+var last = document.getElementById("last-name").value;
+
+if(username == "" || email == "" || password == "" || first == "" || last == "") {
+	alert("Please fill all data");}
+	else{
 	if ((username === "newclient" && password === "newclient")){
-		window.close("register.html");
-		window.open("login.html");
-	// window.location.href = "login.html";
+		// window.close("register.html");
+		// window.open("login.html");
+	window.location.href = "login.html";
 	}
 	else if ((username === "newbanker" && password === "newbanker")){
-		window.close("register.html");
-		window.open("login.html");
-	// window.location.href = "login.html";
+		// window.close("register.html");
+		// window.open("login.html");
+	 window.location.href = "login.html";
 	}
 	else if ((username === "newadmin" && password === "newadmin")){
-		window.close("register.html");
-		window.open("login.html");
-	// window.location.href = "login.html";
+		// window.close("register.html");
+		// window.open("login.html");
+	 window.location.href = "login.html";
 	}
-
+	}
 
 }
 function back(){
