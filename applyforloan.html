@@ -284,11 +284,8 @@ text-decoration: underline;
             <!-- <label for="account-number">Account number</label>
             <input type="text" id="account-number" name="account-number"> -->
             <label for="account-number">Account number</label>
-                <select id="account-number" name="account-number" style="width: 600px;background-color: lightgrey; height: 50px; ">
-                    <option value="12345">99999</option>
-                    <option value="67890">88888</option>
-                    <option value="13579">77777</option>
-                  </select>
+            <input type="text" id="number" name="account-number" placeholder="1234567" >
+
         </body>
           </div>
           <div>
@@ -358,7 +355,7 @@ text-decoration: underline;
           var reason = document.getElementById("reason").value;
           var amount = document.getElementById("amount").value;
           if (reason == "" || amount == ""){
-            alert("Please state your reason and the amount you want");
+            alert("Please fill all your data");
           }
           else{
           alert("Loan application was successful we will notify you when the banker reviwes it.");
