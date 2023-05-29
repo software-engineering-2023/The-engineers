@@ -5,72 +5,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <style>
-
-    /* start of header */
-
-ul.navbar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            /* background-color: #912626; */
-            background-color: #3636a3;
-        }
-
-        ul.navbar li {
-            float: left;
-        }
-
-        ul.navbar li a {
-            display: block;
-            color: rgb(0, 0, 0);
-            text-align: center;
-            padding: 28px 28px;
-            text-decoration: none;
-        }
-
-        ul.navbar li a:hover {
-            background-color: #5b5b5b;
-        }
-   
-      .navbar-toggler-icon {
-        color: white; /* Set the desired color */
-      }
-  
-      .button a {
-          display: block;
-          width: 250px;
-          height: 50px;
-          border: 2px solid #000;
-          text-align: center;
-          line-height: 40px;
-          margin-bottom: 10px;
-          text-decoration: none;
-           color:white; 
-          border-radius: 10px;
-          background-color: #267326;
-      }
-      .button a:hover{
-        background-color: white;
-        color: black;
-      }
-
-      .test{border: none;
-              
-            }
-
-            .image4 {
-                position: absolute;
-                top: 1150px; /* Adjust the values as needed */
-                left: 390px; /* Adjust the values as needed */
-            }
-            h2 {
-
-color:#000;
-text-decoration: underline;
-}
-
-/* end of header */
 /* start of header */
 
 ul.navbar {
@@ -204,8 +138,37 @@ text-decoration: underline;
       margin: 0 auto;
       background-color: #ffffff;
     }
+
+  
+          .container {
+              max-width: 600px;
+              margin: 0 auto;
+              background-color: #fff;
+              padding: 20px;
+              border-radius: 4px;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+  
+          h1 {
+              text-align: center;
+              color: #333;
+              margin-top: 0;
+          }
+  
+          .form-group {
+              margin-bottom: 20px;
+          }
+  
+          label {
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+          } 
+  
+          
   </style>
 </head>
+
 <body>
 
     <!-- start of header -->
@@ -257,13 +220,37 @@ text-decoration: underline;
           </div>
     </div>
           <!-- end of the header -->
-</body>
-<body>
+
+<!-- <body>
   <h1>01288003648</h1>
-  <h1>01141680033</h1>
+  <h1>01141680033</h1> -->
+  
   
 
-</body>
+      <div class="container">
+          <h1>Contact Us</h1>
+          <form>
+              <div class="form-group">
+                  <label for="name">✦ Bank Name: The Engineers</label>
+                  <!-- <input type="text" id="name" name="name" required> -->
+              </div>
+              <div class="form-group">
+                  <label for="email">✉ Bank Email: theengineers@guc.edu.eg</label>
+                  <!-- <input type="email" id="email" name="email" required> -->
+              </div>
+              <div class="form-group">
+                <label for="message">☎ Bank Hotline: 19991</label>
+                <!-- <textarea id="message" name="message" required></textarea> -->
+            </div>
+              <div class="form-group">
+                  <label for="message">✆ Bank Number: 01288003648 - 01141680033</label>
+                  <!-- <textarea id="message" name="message" required></textarea> -->
+              </div>
+            
+          </form>
+      </div>
+  </body>
+
 </html>
 <script>
   function redirectToPage5() {
