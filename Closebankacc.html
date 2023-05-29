@@ -271,7 +271,7 @@ text-decoration: underline;
                     }
                 </style>
                  <label for="account-number">Account number</label>
-                 <input type="text" id="reason" name="account-number" placeholder="ex.4864848648" >
+                 <input type="text" id="acc" name="account-number" placeholder="ex.4864848648" >
                  <div class="div">
                   <title>Reason(Optionnal)</title>
                   <style>
@@ -294,8 +294,19 @@ text-decoration: underline;
 </html>
 <script>
     function showPopup() {
-            document.getElementById('popupOverlay').style.display = 'flex';
+      var fname = document.getElementById("acc").value;
+      var lname = document.getElementById("password").value;
+          
+          
+          if (fname == "" || lname == ""  ){
+            alert("Please fill all your data");
           }
+          else{
+            alert("Application was successful, you will be notified when the banker reviews your applicat.");
+            window.location.href ="homepage.html";
+          }
+        }
+          
       
           function closePopup() {
             window.location.href = "homepage.html";
