@@ -174,8 +174,8 @@ ul.navbar {
           border-radius: 10px;
           background-color: #267326;
           position: absolute;
-          top : 530px;
-          left : 250px;
+          top : 550px;
+          left : 300px;
       }
       .a:hover{
         background-color: white;
@@ -251,6 +251,12 @@ ul.navbar {
         background-color: white;
         color: black;
       }
+      .center {
+                position: absolute;
+                top: 350px;
+                left: 800px;
+                transform: translate(-50%, -50%);
+            }
 
       .test{border: none;
               
@@ -282,12 +288,12 @@ text-decoration: underline;
       border-radius: 5px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-    .center {
+    /* .center {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            }
+            } */
     h2 {
       text-align: center;
     }
@@ -388,15 +394,20 @@ text-decoration: underline;
         
         </div>
 </div>
+<div class="center">
+  <div>
+<h>Balance: 100,000</h>
+</div>
+<div>
 	<label for="transfer" style="margin-top: 20px;">Select Transfer type:</label>
    <select id="transfer" style=" width: 30%;" onchange="myfunction()">
-       
+ 
        <option value="debit" selected>Internal</option>
        <option value="credit">Domestic</option>
        <option value="3rd">International</option>
    </select>
-
-   <div class="cont" style=" width: 600px; margin-top: 30px;  margin-bottom: 100px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="debit">
+  </div>
+   <div class="cont" style=" width: 600px; margin-top: 100px;  margin-bottom: 0px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="debit">
 
     <form action="transfer.php" method="post">
         <label for="from_account">Sender's  Account Number:</label>
@@ -408,12 +419,12 @@ text-decoration: underline;
         <input type="text" id="to_account" name="to_account" style="width: 200px;">
       
       
-        <button class="a">Transfer</button>
+      
       </form>
 
 </div>
 
-<div class="cont" style=" width: 600px; margin-top: 30px;  margin-bottom: 100px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="credit" hidden="hidden">
+<div class="cont" style=" width: 600px; margin-top: 20px;  margin-bottom: 00px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="credit" hidden="hidden">
 
     <form action="transfer.php" method="post" class="modern-form">
         <div class="form-group">
@@ -432,17 +443,17 @@ text-decoration: underline;
         </div>
       
         <div class="form-group">
-          <label for="amount">Amount:</label>
-          <input type="number" id="amount" name="amount" min="1" step="0.01" style="width: 200px;">
+          <label for="to_account" style="margin-top: 13px;">Amount:</label>
+          <input type="text" id="to_account" name="to_account" style="width: 200px;">
         </div>
-        <button class="a">Transfer</button>
+        
         
       </form>
       
 
 </div>
 
-<div class="cont" style=" width: 600px; margin-top: 30px;  margin-bottom: 100px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="3rd" hidden="hidden">
+<div class="cont" style=" width: 600px; margin-top: 20px;  margin-bottom:0px;  margin-left: 40px; border-radius: 5px; padding-left: 20px ; background-color: #dddddd;" id="3rd" hidden="hidden">
 
     <form action="transfer.php" method="post">
         <label for="from_account">Sender's Account Number:</label>
@@ -454,14 +465,15 @@ text-decoration: underline;
         <input type="text" id="to_account" name="to_account"style="width: 300px;">
         <label for="to_account" style="margin-top: 13px;">Receiver's Account Number:</label>
         <input type="text" id="to_account" name="to_account" style="width: 500px;">
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" name="amount" min="1" step="0.01" style="width: 200px;">
+        <label for="to_account" style="margin-top: 13px;">Amount:</label>
+        <input type="text" id="to_account" name="to_account" style="width: 200px;">
       
        
       </form>
-      <button class="a">Transfer</button>
+    
 </div>
-	
+<button class="a">Transfer</button>
+</div>
 </body>
 </html>
 
