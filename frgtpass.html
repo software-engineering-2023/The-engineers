@@ -3,7 +3,54 @@
 <head>
 	<title>Forgot Password</title>
     <link rel="stylesheet" href="main.css">
-	
+	<style>
+		.btn {
+		display: block;
+		width: 350px;
+		height: 20px;
+		border: 2px solid #000;
+		text-align: center;
+		/* line-height: 40px; */
+		margin-bottom: 25px;
+		text-decoration: none;
+		 color:white; 
+		 font-size: larger;
+		border-radius: 10px;
+
+		background-color: #267326;
+		position: relative;
+		left:0px;
+		top:10px;
+
+	}
+	.btn:hover{
+	  background-color: white;
+	  color: black;
+	}
+	.btnn {
+		display: block;
+		width: 350px;
+		height: 40px;
+		border: 2px solid #000;
+		text-align: center;
+		/* line-height: 40px; */
+		margin-bottom: 25px;
+		text-decoration: none;
+		 color:white; 
+		 font-size: larger;
+		border-radius: 10px;
+
+		background-color: #267326;
+		position: absolute;
+		left:10px;
+		top:300px;
+
+	}
+	.btnn:hover{
+	  background-color: white;
+	  color: black;
+	}
+	</style>
 	
 </head>
 <body>
@@ -15,11 +62,11 @@
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 		
-		<a class="btn" style="background-color: rgb(18, 106, 18);" onclick="checkINFO()">Reset Password</a>
+		<a class="btn"  onclick="checkINFO()">Reset Password</a>
 	</form>
 </body>
 <div>
-	<button type="button" class="btn btn-primary" style="background-color: #267326; width: 100px;margin-top: 350px;" onclick="back()">Back</button>
+	<button type="button" class="btnn" style=" width: 100px;margin-top: 350px;" onclick="back()">Back</button>
 </div>
 </html>
 <script>

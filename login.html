@@ -3,6 +3,52 @@
 <head>
 	<title>Bank Login</title>
 	<link rel="stylesheet" href="main.css">
+	<style>
+	.btn {
+		display: block;
+		width: 350px;
+		height: 20px;
+		border: 2px solid #000;
+		text-align: center;
+		/* line-height: 40px; */
+		margin-bottom: 25px;
+		text-decoration: none;
+		 color:white; 
+		 font-size: larger;
+		border-radius: 10px;
+
+		background-color: #267326;
+		position: relative;
+		left:0px;
+		top:10px;
+
+	}
+	.btn:hover{
+	  background-color: white;
+	  color: black;
+	}
+	.bt {
+		display: block;
+		width: 395px;
+		height: 46px;
+		border: 2px solid #000;
+		text-align: center;
+		/* line-height: 40px; */
+		margin-bottom: 10px;
+		text-decoration: none;
+		 color:white; 
+		 font-size: larger;
+		border-radius: 10px;
+		background-color: rgb(2, 39, 98);;
+		/* position: relative;
+		left: 50px; */
+
+	}
+	.bt:hover{
+	  background-color: white;
+	  color: black;
+	}
+</style>
 </head>
 <body>
     <div class="container-fluid">
@@ -19,13 +65,13 @@
 
         <a href="frgtpass.html" style="margin-top:3px; margin-bottom: 15px; font-size: smaller; color:#074450;">Forgot Password</a>
 		
-        <a class="btn" style="margin-top:10px;" onclick="checkLogin(); ">Login</a>
+        <a class="btn" onclick="checkLogin(); ">Login</a>
         <hr style="margin-top: 15px; margin-bottom: 15px;">
-        <button class="btn" style="background-color: rgb(2, 39, 98);" onclick="window.location.href='register.html'">Register</button>
+        <button class="bt"  onclick="window.location.href='register.html'">Register</button>
         
 	</form>
 
-    
+    <!-- BankerHomePage -->
     </div>
 </body>
 </html>
