@@ -215,7 +215,7 @@
 </table>
 <form>
   <label>Bill ID</label>
-  <input type="text" required style="width: 355px;">
+  <input type="text" required style="width: 355px;" id="Bill ID">
 </form>
 <form style="margin-top: 10px;">
 
@@ -223,7 +223,7 @@
           <a href="homepage.html">Back</a>
       </div>
   <label>Credit Card/Account Number</label>
-  <input type="text" required>
+  <input type="text" required id="Num">
    <button class="a" onclick="functionn()" style="background-color: 267326;">Pay with credit card
   </button>
   <script>
@@ -258,6 +258,19 @@
   function redirectToPage2() {
     window.location.href = "PayWithBankAccount.html"; // Replace with your desired URL
   }
+  function redirectToPage0() {
+    window.location.href = "homepage.html";}
+  // function functionn(){
+  //         var billid = document.getElementById("Bill ID").value;
+  //         var num = document.getElementById("Num").value;
+  //         if (billid == "" || num == ""){
+  //           alert("Please complete filling the form");
+  //         }
+  //         else{
+  //         alert("Bill paid successfully.");
+  //         redirectToPage0();
+  //         }
+  //       }
 </script>
 
  <!-- <select class="form-select" aria-label="Default select example">
