@@ -92,8 +92,8 @@ text-decoration: underline;
           border-radius: 10px;
           background-color: #267326;
           position: absolute;
-          top : 450px;
-          left : 20px;
+          top : 380px;
+          left : 260px;
       }
       .a:hover{
         background-color: white;
@@ -112,8 +112,8 @@ text-decoration: underline;
           border-radius: 10px;
           background-color: #267326;
           position: absolute;
-          top : 450px;
-          left : 520px;
+          top : 700px;
+          left : 7px;
       }
       .b:hover{
         background-color: white;
@@ -125,7 +125,7 @@ text-decoration: underline;
               left: 0;
               width: 100%;
               height: 100%;
-              background-color: rgba(0, 0, 0, 0.5);
+              /* background-color: rgba(0, 0, 0, 0.5); */
               display: flex;
               justify-content: center;
               align-items: center;
@@ -141,6 +141,7 @@ text-decoration: underline;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 20px;
             border-radius: 4px;
+            border-style: double;
             font-family: Arial, sans-serif;
             font-size: 16px;
             color: #333;
@@ -166,6 +167,12 @@ text-decoration: underline;
         background-color: white;
         color: black;
       }
+      .center {
+                position: absolute;
+                top: 300px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
 </style>
 </head>
 <body>
@@ -215,8 +222,11 @@ text-decoration: underline;
                 </div>
               </div>
               </div>
+    </div>
+    
+    <div class="center">
               <div style="margin-left: 18px;">
-                <h1>Open a bank account</h1>
+                <h1>Close a bank account</h1>
               <div>
                 <title>Account Number</title>
                 <style>
@@ -244,7 +254,7 @@ text-decoration: underline;
                       <button class="c" onclick="closePopup()" style="display:inline-block;">Return</button>
                     </div>
                   </div>
-                  <button class="b" style = "width: 100px;" onclick="redirectToPage()">Back</button>
+                  
                   <button class="a" onclick="showPopup()">Submit</button>
                 <style>
                   .div{
@@ -277,7 +287,10 @@ text-decoration: underline;
                    <label for="password">Password:</label>
 		<input  class = "st"type="password" id="password" name="password" required placeholder="*******">
                  </div>
-                 
+              </div>
+              </div>
+    </div>
+              <button class="b" style = "width: 100px;" onclick="redirectToPage()">Back</button>
 </html>
 <script>
     function showPopup() {
@@ -304,5 +317,8 @@ text-decoration: underline;
              <script>
               function redirectToPage8() {
                 window.location.href = "ContactUs.html"; // Replace with your desired URL
+              }
+              function redirectToPage() {
+                window.location.href = "homepage.html"; // Replace with your desired URL
               }
 </script>
