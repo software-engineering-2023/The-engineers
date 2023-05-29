@@ -278,7 +278,7 @@ text-decoration: underline;
         </div>
       </div>
       <div class="button-container">
-        <button onclick="showPopup()" type="submit">Set</button>
+        <a onclick="showPopup()" type="submit" class="a">Set</a>
       </div>
     </form>
   </div>
@@ -304,8 +304,7 @@ function showPopup() {
           }
           else{
             alert("A reminder has been set");
-            window.close("setreminder.html");
-            window.open("homepage.html");
+            window.location.replace("homepage.html");
           }
           }
       

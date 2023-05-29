@@ -224,8 +224,8 @@
       </div>
   <label>Credit Card/Account Number</label>
   <input type="text"  id="Num">
-   <button class="a" onclick="functionn()" style="background-color: 267326;">Pay with credit card
-  </button>
+   <a class="a" onclick="functionn()" style="background-color: 267326;">Pay with credit card
+   </a>
   <script>
     
     function redirectToPage5() {
@@ -251,9 +251,9 @@
     }
   </script>
   <!-- <a href="C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"></a> -->
-  <button class="b" onclick="functionn()">
+  <a class="b" onclick="functionn()">
     Pay with bank account
-</button> 
+  </a> 
 <script>
   function redirectToPage2() {
     window.location.href = "PayWithBankAccount.html"; // Replace with your desired URL
@@ -269,8 +269,10 @@
   }
   else{
     alert("Bill paid successfully");
-    window.close();
-     window.open("homepage.html");
+    window.location.replace("homepage.html");
+    // if(window.opener){
+    // window.opener.close("PayBills.html");}
+    //  window.open("homepage.html");
   }
         }
 </script>
