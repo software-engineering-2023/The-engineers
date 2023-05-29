@@ -117,7 +117,7 @@
         <tbody>
           <tr>
             <td>17272872828</td>
-            <td>20000</td>
+            <td id="value">20000</td>
             <td>21-6-2023</td>
           </tr>
         </tbody>
@@ -265,16 +265,16 @@
         </script>
         <form>
           <label>Enter your credit card number : </label>
-          <input type="text" required>
+          <input id="ma"type="text" required>
         </form>
         <form style="margin-top: 10px;">
           <label>Enter the amount you want to pay : </label>
-          <input type="text" required style="width: 160px;">
+          <input id="am" type="text" required style="width: 160px;">
         </form>
           <!-- <a href="C:\\Users\\Medhat\\Desktop\\MS3 SE\\The-engineers\\PayWithBankAccount.html"></a> -->
         
             
-        <button class="b" onclick="showPopup()">Pay
+        <button class="b" onclick="perform()">Pay
         </button>
         <button class="r" onclick="window.location.href = 'homepage.html'">Back
         </button>
@@ -282,6 +282,26 @@
           function redirectToPage() {
             window.location.href = "homepage.html"; // Replace with your desired URL
           }
+          function pay(){
+            var textElement = document.getElementById("am");
+            var num= parseInt(textElement);
+          var sub = 20000 - num;
+            var final = sub.toString();
+            var textElement1 = document.getElementById("value");
+          textElement1.textContent = final;
+          }
+
+          function perform() {
+            var textElement1 = document.getElementById("am").value;
+            var textElement2 = document.getElementById("ma").value;
+            if(textElement1 == "" || textElement2 == ""){
+            alert("Please fill all your data");}
+            else{
+            pay();
+            alert("Transaction completed successfully");
+            window.location.href = "homepage.html";}
+          }
+
         </script>
   
     </body>
